@@ -82,7 +82,7 @@ static NSString *const MyAppBaseURLString = @"http://foodycrawler.herokuapp.com/
     NSURL *photoURL = [NSURL URLWithString:photo];
     UIImage *img = [UIImage imageWithData:[NSData dataWithContentsOfURL:photoURL]];
     cell.imageView.image =[img resizedImageToSize:CGSizeMake(360, 280)];
-    cell.textLabel.text = [array valueForKey:@"title"];
+    //cell.textLabel.text = [array valueForKey:@"title"];
     return cell;
 
 }
